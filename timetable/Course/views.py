@@ -1,5 +1,5 @@
 from Course.models import Course
-from base.decorator import require_get, require_login
+from base.decorator import require_get, require_login, require_post, require_json, require_params
 from base.error import Error
 from base.response import error_response, response
 

@@ -49,11 +49,28 @@ class Course(models.Model):
             return Ret(Error.COURSE_NOT_EXIST)
         return Ret(Error.OK, body=o_course)
 
-    def to_dict(self):
+    def to_dict(self, term=""):
+        ret = Course.get_course_by_id(self.id)
+        if ret.error is not Error.OK:
+            return Ret(ret.error)
+        o_course = ret.body
+
+        from Section.models import Section
+        ret = Section.get_sections_by_course(o_course)
+        if ret.error is not Error.OK:
+            return Ret(ret.error)
+        sections = ret.body
+
+        section_list = []
+        for section in sections:
+            if term == "" or section.term == term:
+                section_list.append(section.to_dict())
+
         return dict(
             id=self.id,
             subject=self.subject,
             course_code=self.course_code,
             title=self.title,
             description=self.description,
+            sections=section_list,
         )

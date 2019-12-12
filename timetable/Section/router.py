@@ -10,13 +10,16 @@ def router_selectsection(request):
     GET: get_selected_sections_by_user
     POST: create_select_section
     """
-
     if request.method == "GET":
         return get_selected_sections_by_user(request)
     elif request.method == "POST":
-        return create_select_section(request)
+        return create_select_section_by_section_id(request)
+    # elif request.method == "POST":
+    #     return create_select_section(request)
     # elif request.method == "DELETE":
     #     return delete_section_by_category(request)
+    elif request.method == "DELETE":
+        return delete_select_section(request)
     else:
         return error_response(Error.ERROR_METHOD)
 

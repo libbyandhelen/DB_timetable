@@ -1,0 +1,41 @@
+body{
+    background: url("../imgs/background.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+#login-form{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+}
+
+#signup-form{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+    display: none;
+}
+
+#error1{
+    color: #d9534f;
+}
+
+#error2{
+    color: #d9534f;
+}
+
+.title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3em !important;
+    color: #0f4d92 !important;
+}
+
+nav {
+    background:rgba(255,255,255,1) !important ;
+    font-size: 15px
+
+}

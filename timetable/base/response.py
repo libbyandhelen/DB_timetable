@@ -26,6 +26,7 @@ def response(code=0, msg="ok", body=None):
         status=200,
         content_type="application/json; encoding=utf-8",
     )
+    # http_resp['Access-Control-Allow-Origin'] = '*'
     return http_resp
 
 

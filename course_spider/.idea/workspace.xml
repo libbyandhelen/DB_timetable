@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a822521-2cfc-4e7e-b0c6-75798aa40762" name="Default Changelist" comment="" />
+    <list default="true" id="8a822521-2cfc-4e7e-b0c6-75798aa40762" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../timetable/Course/search_indexes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/js/d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/js/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/frontend/js/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/templates/search/indexes/Course/course_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/timetable/front_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timetable/timetable/search_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/.idea/timetable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/.idea/timetable.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/Course/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/Course/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/Course/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/Course/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/Course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/Course/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/Section/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/Section/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/Section/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/Section/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/base/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/base/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/base/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/base/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/timetable/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/timetable/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../timetable/timetable/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../timetable/timetable/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +36,7 @@
     <session id="1461762378">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -42,7 +67,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/course_spider/spiders/course_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="185">
@@ -66,21 +91,9 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/course_spider/middlewares.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/course_spider/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-              <folding>
-                <element signature="e#424#433#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -96,7 +109,11 @@
       <find>spider</find>
       <find>course</find>
       <find>join</find>
+      <find>descrip</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -116,6 +133,7 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -181,13 +199,13 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -210,9 +228,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/course_spider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/course_spider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -232,6 +247,16 @@
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/course_spider/spiders/course_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/course_spider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -242,15 +267,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/course_spider/spiders/course_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/course_spider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

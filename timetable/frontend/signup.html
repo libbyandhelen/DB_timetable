@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href={% static 'css/login.css' %}>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/d3.js' %}"></script>
+    <script src={% static 'js/request.js' %}></script>
+</head>
+<body style="background-image: url({% static 'imgs/background.jpg' %})">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand title" href="#">Yale Timetable</a>
+    </div>
+  </div>
+</nav>
+<div id="login-form">
+    <form>
+        <h2>Sign in</h2>
+      <div class="form-group">
+        <label for="username1">Username</label>
+        <input type="text" class="form-control" id="username1" placeholder="username">
+      </div>
+      <div class="form-group">
+        <label for="pass1">Password</label>
+        <input type="password" class="form-control" id="pass1" placeholder="Password">
+      </div>
+        <div>
+            <label id="error1" class="control-label" for="error1"></label>
+        </div>
+      <button id="login-button" type="submit" class="btn btn-default">Sign in</button>
+        <p><a id="sign-up-link" href="#">new user? sign up here</a></p>
+    </form>
+</div>
+
+<div id="signup-form">
+    <form>
+        <h2>Sign up</h2>
+      <div class="form-group">
+        <label for="username2">Username</label>
+        <input type="text" class="form-control" id="username2" placeholder="username">
+      </div>
+      <div class="form-group">
+        <label for="pass2">Password</label>
+        <input type="password" class="form-control" id="pass2" placeholder="Password">
+      </div>
+        <div>
+            <label id="error2" class="control-label" for="error2"></label>
+        </div>
+      <button id="signup-button" type="submit" class="btn btn-default">Sign up</button>
+        <p id="login-link"><a href="#">already sign up? sign in here</a></p>
+    </form>
+</div>
+
+
+</body>
+ <script src="{% static 'js/login.js' %}"></script>
+</html>

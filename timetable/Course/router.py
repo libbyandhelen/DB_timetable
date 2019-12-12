@@ -1,5 +1,6 @@
 from Course.views import get_course_info
-from Section.views import get_sections_by_course, get_sibling_sections, get_section, get_meetings_by_section, get_terms
+from Section.views import get_sections_by_course, get_sibling_sections, get_section, get_meetings_by_section, get_terms, \
+    get_courses_by_term
 from base.error import Error
 from base.response import error_response
 
@@ -55,8 +56,11 @@ def router_course_term(request):
     """
     /api/courses/terms
     GET: get_terms
+    POST: get courses by term
     """
     if request.method == "GET":
         return get_terms(request)
+    elif request.method == "POST":
+        return get_courses_by_term(request)
     else:
         return error_response(Error.ERROR_METHOD)

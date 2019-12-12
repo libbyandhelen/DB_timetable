@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c4e4406-8398-46a5-be17-3c405ca6e4d1" name="Default Changelist" comment="" />
+    <list default="true" id="0c4e4406-8398-46a5-be17-3c405ca6e4d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Course/search_indexes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/js/d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/js/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/js/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search/indexes/Course/course_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timetable/front_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timetable/search_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../course_spider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/200903.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201002.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201101.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201102.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201103.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201203.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201301.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201302.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201303.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201402.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201403.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201501.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201502.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201601.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201602.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201603.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201702.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201703.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201801.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201802.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201803.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201901.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201902.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/201903.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/202001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/200903.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201002.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201101.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201102.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201103.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201203.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201301.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201302.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201303.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201402.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201403.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201501.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201502.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201601.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201602.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201603.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201702.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201703.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201801.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201802.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201803.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201901.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201902.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/201903.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_spider/data/202001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/timetable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/timetable.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Section/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/Section/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Section/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetable/api_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetable/api_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetable/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetable/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetable/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetable/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,150 +107,171 @@
     <session id="754765857">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="2" />
-          <entry key="py" value="39" />
+          <entry key="css" value="4" />
+          <entry key="html" value="11" />
+          <entry key="js" value="19" />
+          <entry key="json" value="1" />
+          <entry key="py" value="112" />
+          <entry key="ts" value="1" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="39" />
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="11" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="19" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="112" />
+          <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2983" />
+          <entry key="css" value="254" />
+          <entry key="dummy" value="1" />
+          <entry key="html" value="1061" />
+          <entry key="js" value="5297" />
+          <entry key="py" value="7523" />
+          <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2983" />
+          <entry key="CSS" value="254" />
+          <entry key="HTML" value="1061" />
+          <entry key="JavaScript" value="5297" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="7523" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timetable/api_urls.py">
+        <entry file="file://$PROJECT_DIR$/timetable/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Course/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Course/router.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Section/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Section/router.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#144#0" expanded="true" />
+                <element signature="e#633#665#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Section/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Section/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
+            <state relative-caret-position="15">
+              <caret line="137" column="106" selection-start-line="137" selection-start-column="99" selection-end-line="137" selection-end-column="106" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1575046877265" expanded="true" signature="2630:4009" ph="..." />
-                <marker date="1575046877265" expanded="true" signature="5832:7098" ph="..." />
+                <marker date="1575940506128" expanded="true" signature="1576:1841" ph="..." />
+                <marker date="1575940506128" expanded="true" signature="3076:4455" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Event/models.py">
+        <entry file="file://$PROJECT_DIR$/frontend/js/table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+            <state relative-caret-position="194">
+              <caret line="849" column="4" selection-start-line="849" selection-start-column="4" selection-end-line="849" selection-end-column="4" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1575037707989" expanded="true" signature="146:147" ph="..." />
-                <marker date="1575037707989" expanded="true" signature="1414:1598" ph="..." />
-                <marker date="1575037707989" expanded="true" signature="1863:3117" ph="..." />
-                <marker date="1575037707989" expanded="true" signature="2527:2745" ph="..." />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Event/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/timetable/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="79" column="6" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="102" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3759#3766#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/User/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="892">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/css/table.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/router.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#113#0" expanded="true" />
+                <marker date="1576033424772" expanded="true" signature="212:217" ph="..." />
+                <marker date="1576033424772" expanded="true" signature="850:1321" ph="..." />
+                <marker date="1576033424772" expanded="true" signature="1105:1321" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -163,44 +279,98 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>code</find>
-      <find>midd</find>
-      <find>sql_mode</find>
-      <find>term</find>
+      <find>getDay</find>
+      <find>rect</find>
+      <find>toolt</find>
+      <find>hover</find>
+      <find>done</find>
+      <find>drawtab</find>
+      <find>draw</find>
+      <find>tooltip</find>
+      <find>xposi</find>
+      <find>drawlist</find>
+      <find>nav</find>
+      <find>drawtable</find>
+      <find>add</find>
+      <find>sunday</find>
+      <find>today</find>
+      <find>next</find>
+      <find>sun</find>
+      <find>consol</find>
+      <find>conso</find>
+      <find>deadl</find>
+      <find>event_list</find>
+      <find>/api/events</find>
+      <find>delete</find>
+      <find>afterWeek</find>
+      <find>height</find>
+      <find>yPosition</find>
+      <find>search for</find>
+      <find>xPosition</find>
+      <find>data</find>
+      <find>request</find>
     </findStrings>
+    <replaceStrings>
+      <replace>usersections</replace>
+      <replace>HTBA</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/User/models.py" />
-        <option value="$PROJECT_DIR$/base/error.py" />
-        <option value="$PROJECT_DIR$/Event/models.py" />
         <option value="$PROJECT_DIR$/mysql.local.conf" />
         <option value="$PROJECT_DIR$/User/admin.py" />
         <option value="$PROJECT_DIR$/Section/admin.py" />
         <option value="$PROJECT_DIR$/Event/admin.py" />
         <option value="$PROJECT_DIR$/Course/admin.py" />
         <option value="$PROJECT_DIR$/timetable/__init__.py" />
+        <option value="$PROJECT_DIR$/timetable/front_view.py" />
+        <option value="$PROJECT_DIR$/timetable/front_views.py" />
         <option value="$PROJECT_DIR$/timetable/settings.py" />
-        <option value="$PROJECT_DIR$/Course/models.py" />
-        <option value="$PROJECT_DIR$/Section/models.py" />
-        <option value="$PROJECT_DIR$/timetable/urls.py" />
-        <option value="$PROJECT_DIR$/Event/urls.py" />
-        <option value="$PROJECT_DIR$/User/urls.py" />
-        <option value="$PROJECT_DIR$/User/views.py" />
+        <option value="$PROJECT_DIR$/base/error.py" />
+        <option value="$PROJECT_DIR$/Course/search_indexes.py" />
+        <option value="$PROJECT_DIR$/templates/search/Course/course_text.txt" />
+        <option value="$PROJECT_DIR$/templates/search/indexes/Course/course_text.txt" />
+        <option value="$PROJECT_DIR$/Course/urls.py" />
         <option value="$PROJECT_DIR$/Course/views.py" />
         <option value="$PROJECT_DIR$/Course/router.py" />
-        <option value="$PROJECT_DIR$/Section/urls.py" />
-        <option value="$PROJECT_DIR$/Section/views.py" />
+        <option value="$PROJECT_DIR$/timetable/search_views.py" />
+        <option value="$PROJECT_DIR$/Course/models.py" />
+        <option value="$PROJECT_DIR$/User/views.py" />
         <option value="$PROJECT_DIR$/timetable/api_urls.py" />
-        <option value="$PROJECT_DIR$/Course/urls.py" />
+        <option value="$PROJECT_DIR$/base/response.py" />
+        <option value="$PROJECT_DIR$/User/urls.py" />
+        <option value="$PROJECT_DIR$/frontend/js/login.js" />
+        <option value="$PROJECT_DIR$/frontend/js/request.js" />
+        <option value="$PROJECT_DIR$/timetable/urls.py" />
+        <option value="$PROJECT_DIR$/Section/models.py" />
+        <option value="$PROJECT_DIR$/../../table (1).js" />
+        <option value="$PROJECT_DIR$/frontend/js/new_table.js" />
+        <option value="$PROJECT_DIR$/Section/urls.py" />
         <option value="$PROJECT_DIR$/Section/router.py" />
+        <option value="$PROJECT_DIR$/Section/views.py" />
+        <option value="$PROJECT_DIR$/Event/urls.py" />
+        <option value="$PROJECT_DIR$/Event/views.py" />
+        <option value="$PROJECT_DIR$/Event/router.py" />
+        <option value="$PROJECT_DIR$/Event/models.py" />
+        <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/frontend/signup.html" />
+        <option value="$PROJECT_DIR$/frontend/css/table.css" />
+        <option value="$PROJECT_DIR$/frontend/css/login.css" />
+        <option value="$PROJECT_DIR$/frontend/js/table.js" />
       </list>
     </option>
   </component>
@@ -214,27 +384,19 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="timetable" type="b2602c69:ProjectViewProjectNode" />
               <item name="timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="timetable" type="b2602c69:ProjectViewProjectNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-              <item name="Course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="timetable" type="b2602c69:ProjectViewProjectNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="timetable" type="b2602c69:ProjectViewProjectNode" />
@@ -246,23 +408,27 @@
               <item name="timetable" type="462c0819:PsiDirectoryNode" />
               <item name="timetable" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="timetable" type="b2602c69:ProjectViewProjectNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/css" />
+      <recent name="$PROJECT_DIR$/frontend/js" />
+      <recent name="$PROJECT_DIR$/templates/search/indexes" />
+      <recent name="$PROJECT_DIR$/frontend/imgs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -317,15 +483,9 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -333,11 +493,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="1760" column="6" selection-start-line="1760" selection-start-column="6" selection-end-line="1760" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/error.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -397,16 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timetable/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -421,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timetable/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Course/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -438,19 +580,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timetable/urls.py">
+    <entry file="file://$PROJECT_DIR$/frontend/package.json" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/js/d3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/error.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/views.py">
+    <entry file="file://$PROJECT_DIR$/Course/search_indexes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/Course/course_text.txt" />
+    <entry file="file://$PROJECT_DIR$/../../main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="114" column="7" lean-forward="true" selection-start-line="28" selection-end-line="114" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="224" column="1" lean-forward="true" selection-start-line="123" selection-end-line="224" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/indexes/Course/course_text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/router.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable/search_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,108 +664,267 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Course/models.py">
+    <entry file="file://$PROJECT_DIR$/base/response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="435">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Section/models.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
+        <state relative-caret-position="203">
+          <caret line="17143" column="17" selection-start-line="17143" selection-start-column="17" selection-end-line="17143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1575046877265" expanded="true" signature="2630:4009" ph="..." />
-            <marker date="1575046877265" expanded="true" signature="5832:7098" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event/models.py">
+    <entry file="file://$PROJECT_DIR$/frontend/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1575037707989" expanded="true" signature="146:147" ph="..." />
-            <marker date="1575037707989" expanded="true" signature="1414:1598" ph="..." />
-            <marker date="1575037707989" expanded="true" signature="1863:3117" ph="..." />
-            <marker date="1575037707989" expanded="true" signature="2527:2745" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Event/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/router.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/User/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable/front_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../table (1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="621" column="1" lean-forward="true" selection-start-line="621" selection-start-column="1" selection-end-line="621" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/new_table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2220">
+          <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timetable/api_urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Section/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../main (1).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="189" column="29" lean-forward="true" selection-start-line="135" selection-start-column="6" selection-end-line="189" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Section/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="248" column="13" selection-start-line="248" selection-start-column="7" selection-end-line="248" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1575777735978" expanded="true" signature="1309:1314" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Section/router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="e#0#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Section/views.py">
+    <entry file="file://$PROJECT_DIR$/Event/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
+        <state relative-caret-position="248">
+          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
+            <marker date="1576032441158" expanded="true" signature="420:425" ph="..." />
+            <marker date="1576032441158" expanded="true" signature="1000:1041" ph="..." />
+            <marker date="1576032441158" expanded="true" signature="1624:1625" ph="..." />
+            <marker date="1576032441158" expanded="true" signature="2202:2970" ph="..." />
+            <marker date="1576032441158" expanded="true" signature="2471:2970" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="142" column="19" lean-forward="true" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1576034942282" expanded="true" signature="177:178" ph="..." />
+            <marker date="1576034942282" expanded="true" signature="1441:1881" ph="..." />
+            <marker date="1576034942282" expanded="true" signature="1676:1881" ph="..." />
+            <marker date="1576034942282" expanded="true" signature="2810:3028" ph="..." />
+            <marker date="1576034942282" expanded="true" signature="3486:4098" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/router.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+            <marker date="1576033424772" expanded="true" signature="212:217" ph="..." />
+            <marker date="1576033424772" expanded="true" signature="850:1321" ph="..." />
+            <marker date="1576033424772" expanded="true" signature="1105:1321" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3759#3766#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="849" column="4" selection-start-line="849" selection-start-column="4" selection-end-line="849" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Section/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="137" column="106" selection-start-line="137" selection-start-column="99" selection-end-line="137" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1575940506128" expanded="true" signature="1576:1841" ph="..." />
+            <marker date="1575940506128" expanded="true" signature="3076:4455" ph="..." />
           </folding>
         </state>
       </provider>

@@ -120,7 +120,7 @@ def get_terms(request):
 @require_login
 @require_get
 def get_selected_sections_by_user(request):
-    """GET /api/selectsections"""
+    """GET /api/usersections"""
     ret = get_user_from_session(request)
     if ret.error is not Error.OK:
         return error_response(ret.error)
@@ -142,7 +142,7 @@ def get_selected_sections_by_user(request):
 @require_json
 @require_params(['course_id', 'term'])
 def create_select_section(request):
-    """POST /api/selectsections"""
+    """POST /api/usersections"""
     color_scheme = [
         {
             'bgcolor': "#A3E7FC",
@@ -243,8 +243,11 @@ def create_select_section(request):
 
 @require_login
 @require_delete
-def delete_select_section(request, section_id):
-    """DELETE /api/selectsections/:section_id"""
+@require_json
+@require_params(['section_id'])
+def delete_select_section(request):
+    """DELETE /api/usersections/:section_id"""
+    section_id = request.POST['section_id']
     ret = get_user_from_session(request)
     if ret.error is not Error.OK:
         return error_response(ret.error)
@@ -266,12 +269,12 @@ def delete_select_section(request, section_id):
 @require_login
 @require_post
 @require_json
-@require_params(['bg_color', 'color'])
-def create_select_section_by_section_id(request, section_id):
-    """POST /api/selectsections/:section_id"""
+@require_params(['bg_color', 'color', 'section_id'])
+def create_select_section_by_section_id(request):
+    """POST /api/usersections/:section_id"""
     bg_color = request.POST['bg_color']
     color = request.POST['color']
-    # section_id = request.POST['section_id']
+    section_id = request.POST['section_id']
 
     ret = get_user_from_session(request)
     if ret.error is not Error.OK:
@@ -290,3 +293,17 @@ def create_select_section_by_section_id(request, section_id):
     return response(body=o_select_section.to_dict())
 
 
+@require_login
+@require_post
+@require_json
+@require_params(['term'])
+def get_courses_by_term(request):
+    term = request.POST['term']
+    ret = Section.get_course_by_term(term)
+    if ret.error is not Error.OK:
+        return error_response(ret.error)
+    courses = ret.body
+    course_list = []
+    for course in courses:
+        course_list.append(course.to_dict())
+    return response(body=course_list)

@@ -1,0 +1,92 @@
+body {
+	font-size: 12px;
+}
+nav {
+    background:rgba(255,255,255,1) !important ;
+    font-size: 15px 
+    
+}
+/* Yale Timetable */
+#title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3em !important;
+    color: #0f4d92 !important;
+}
+/* dropdown menu */
+.btn-primary{
+    width: 100% !important;
+    background: rgba(255,255,255,0.8) !important;
+    color: black !important;
+    text-align: center !important;
+    border-color: rgba(204,204,204)!important;
+}
+
+/* .dropdown-menu{
+    width: 100% !important;
+    background:white !important;
+    color: black !important;
+} */
+
+#search_btn{
+    background: #0f4d92 !important;
+    color: white !important;
+    text-shadow: none;
+    /* font-family: 'Arial'; */
+}
+.panel-title{
+    font-size: 13px !important;
+}
+.panel-body{
+    font-size: 12px !important;
+    /* font-family: 'Helvetica' !important; */
+
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.main{
+    height: 100%;
+}
+.row{
+    height: 100%;;
+}
+.scroll{
+    height: 100%;
+    overflow: scroll;
+}
+.col-md-8{
+    text-align:center;
+}
+
+#tooltip1, #tooltip2{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip1.hidden, #tooltip2.hidden {
+    display: none;
+}
+
+#tooltip1 p, #tooltip2 p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+rect:hover{
+    cursor: pointer;
+}

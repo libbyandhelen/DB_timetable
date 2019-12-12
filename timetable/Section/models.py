@@ -58,6 +58,15 @@ class Section(models.Model):
 
         return Ret(Error.OK, body=terms)
 
+    @staticmethod
+    def get_course_by_term(term):
+        sections = Section.objects.filter(term=term)
+        course_list = []
+        for section in sections:
+            if section.course not in course_list:
+                course_list.append(section.course)
+        return Ret(Error.OK, body=course_list)
+
     # get all sections of a course
     @staticmethod
     def get_sections_by_course(o_course):
@@ -76,9 +85,12 @@ class Section(models.Model):
 
         return dict(
             id=self.id,
-            # course_id=self.course_id,
+            course_id=self.course_id,
+            course_code=self.course.course_code,
+            course_title=self.course.title,
+            subject=self.course.subject,
             # course_code=self.course.course_code,
-            course=self.course.to_dict(),
+            # course=self.course.to_dict(),
             section_code=self.section_code,
             term=self.term,
             instructor=self.instructor,

@@ -1,5 +1,6 @@
 class Error:
     """Error class"""
+    NO_SEARCH_PARAMETER = 1021
     USER_TODO_NOT_EXIST = 1020
     ERROR_CREATE_EVENT = 1019
     EVENT_NOT_EXIST = 1018
@@ -25,6 +26,7 @@ class Error:
     OK = 0
 
     ERROR_TUPLE = (
+        (NO_SEARCH_PARAMETER, "no search parameters"),
         (USER_TODO_NOT_EXIST, "Usertodo does not exist"),
         (ERROR_CREATE_EVENT, "Error when creating the event"),
         (EVENT_NOT_EXIST, "Event does not exist"),

@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Schedule Table</title>
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+         crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}">
+       <!-- font -->
+       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+         crossorigin="anonymous"></script>
+      <script type="text/javascript" src="{% static 'js/d3.js' %}"></script>
+      <!-- date picker -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+      <script src={% static 'js/request.js' %}></script>
+   </head>
+   <body>
+   <div class="main">
+       <nav class="navbar navbar-default">
+         <div class="navbar-header">
+            <p class="navbar-brand"  id="title" >Yale Timetable</p>
+            <button id="sign-out-button" type="button" class="btn btn-default navbar-btn" style="position: absolute; right :1%">Sign Out</button>
+         </div>
+      </nav>
+      <div class="row" style="margin-left:15px;margin-right:15px">
+         <div class="col-md-2 scroll">
+            <select class="form-control dropdown">
+            </select>
+            <div class="input-group">
+               <input type="text" class="form-control" id="search_input" placeholder="Search courses">
+               <span class="input-group-btn">
+               <button class="btn btn-default" id="search_btn" type="button">Search</button>
+               </span>
+            </div>
+            <!-- /input-group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            </div>
+         </div>
+         <div class="col-md-8 scroll">
+            <!-- Button trigger modal -->
+             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Add Deadlines
+            </button>
+             <ul class="pager">
+                <li><a href="#" id="pre-button">Previous</a></li>
+                <li><a href="#" id="next-button">Next</a></li>
+              </ul>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                           aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add Deadline</h4>
+                     </div>
+                     <div class="modal-body">
+                        <form class="form-horizontal">
+                           <div class="form-group">
+                              <label for="inputName3" class="col-sm-2 control-label">Event</label>
+                              <div class="col-sm-10">
+                                 <input type="text" class="form-control" id="inputName3" placeholder="Event Name">
+                              </div>
+                           </div>
+                           <!-- <div class="container"> -->
+                           <div class="form-group">
+                              <label for="inputName3" class="col-sm-2 control-label">Deadlines</label>
+                              <div class="col-sm-10">
+                                 <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" id="inputDeadline" />
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                    <!-- </div> -->
+                                    <script type="text/javascript">
+                                       $(function () {
+                                         $('#datetimepicker1').datetimepicker();
+                                       });
+                                    </script>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-10">
+                                 <textarea class="form-control" rows="3" id="inputMemo" placeholder="Memo"></textarea>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="done_btn">Done</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             <!-- modal end -->
+             <div id="table_area"></div>
+             <div id="tooltip1" class="hidden">
+                 <!--  for course -->
+                 <p id="value11">Couse Code</p >
+                 <p id="value12">Couse Name</p >
+                 <p id="value13">Time</p >
+                 <p id="value14">Room</p >
+              </div>
+              <div id="tooltip2" class="hidden">
+                 <!--  for course -->
+                 <p id="value21">Name</p >
+                 <p id="value22">Deadline</p >
+                 <p id="value23">Memo</p >
+              </div>
+         </div>
+          <div class="col-md-2 scroll">
+              <div class="panel panel-primary" id="remove_course">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Courses</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+
+            <div class="panel panel-danger" id="remove_event">
+              <div class="panel-heading" >
+                <h3 class="panel-title">This Week Deadline</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+                <div class="panel-body">
+                Panel content
+              </div>
+                <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div>
+      </div>
+   </div>
+
+   </body>
+   <script type="text/javascript" src="{% static 'js/table.js' %}"></script>
+</html>

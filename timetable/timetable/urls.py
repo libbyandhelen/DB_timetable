@@ -16,7 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 
+from timetable import front_views, search_views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'api/', include('timetable.api_urls')),
+    url(r'search/', search_views.auto_search),
+
+    url(r'signup', front_views.signup_page),
+    url(r'timetable', front_views.timetable_page),
 ]

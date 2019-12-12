@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 
 from User.models import User
@@ -49,10 +51,10 @@ class Event(models.Model):
     @staticmethod
     def get_event_by_id(event_id):
         try:
-            o_section = Event.objects.get(id=event_id)
+            o_event = Event.objects.get(id=event_id)
         except Event.DoesNotExist:
             return Ret(Error.EVENT_NOT_EXIST)
-        return Ret(Error.OK, body=o_section)
+        return Ret(Error.OK, body=o_event)
 
     @staticmethod
     def create_event(name, end_date, end_time, memo, status):
@@ -60,6 +62,15 @@ class Event(models.Model):
         if ret.error is not Error.OK:
             return Ret(ret.error)
         return Ret(Error.OK, ret.body)
+
+    @staticmethod
+    def delete_event_by_id(event_id):
+        ret = Event.get_event_by_id(event_id)
+        if ret.error is not Error.OK:
+            return Ret(ret.error)
+        o_event = ret.body
+        o_event.delete()
+        return Ret(Error.OK)
 
     def to_dict(self):
         return dict(
@@ -116,3 +127,28 @@ class UserTodo(models.Model):
         if ret.error is not Error.OK:
             return Ret(ret.error)
         return Ret(Error.OK, ret.body)
+
+    @staticmethod
+    def get_user_event_by_date_range(start_date, end_date, o_user):
+        start = datetime.strptime(start_date, "%m/%d/%Y")
+        end = datetime.strptime(end_date, "%m/%d/%Y")
+        ret = UserTodo.get_user_todo_by_user(o_user)
+        if ret.error is not Error.OK:
+            return Ret(ret.error)
+        user_todos = ret.body
+
+        event_list = []
+        for user_todo in user_todos:
+            d = datetime.strptime(user_todo.event.end_date, "%m/%d/%Y")
+            print(start)
+            print(end)
+            print(d)
+            if start <= d <= end:
+                event_list.append(user_todo.event.to_dict())
+        return Ret(Error.OK, event_list)
+
+    def to_dict(self):
+        return dict(
+            user_id=self.user_id,
+            event_id=self.event_id,
+        )
